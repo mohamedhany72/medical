@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDICAL - BLOG</title>
+    <link rel="icon" href="../images/logo.png" type="image/x-icon">
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,700;1,400&family=Lalezar&family=Lato:wght@400;700&display=swap" rel="stylesheet">    <!--swiper-->
+    <!--swiper-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <!--fontawsome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
+    <!--main style sheet-->
+    <link rel="stylesheet" href="../styles/blog.css">
+</head>
+<body>
+    <!---------------------------------- nav menus ------------------------------------------>
+    <div class="side-nav">
+        <div class="nav-top">
+            <div>
+                <a href="#" class="brand"><img src="../images/logo2.png" alt="log">MEDICAL</a>
+            </div>
+            
+            <div class="burger burger-squeeze">
+                <div class="burger-lines"></div>
+            </div>
+        </div>
+        <div class="side-navabar">
+            <a href="#" class="brand"><img src="../images/logo2.png" alt="log">MEDICAL</a>
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">DOCTORS</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li class="blog"><a href="#">BLOG</a></li>
+            </ul>
+            <button type="button" class="btn btn-primary-1 appointment-button" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap"><span>BOOK APPOINTMENT</span><div class="btn-overlay"></div></button>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">BOOk APPOINTMENT</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="patient-name" class="col-form-label sr-only sr-only-focusable">Your Full Name</label>
+                                    <input type="text" class="form-control" id="patient-name" placeholder="Your Full Name...">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email-address" class="col-form-label sr-only sr-only-focusable">Your Email Address</label>
+                                    <input type="email" class="form-control" id="email-address" placeholder="Your Email Address...">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone-number" class="col-form-label sr-only sr-only-focusable">Your Phone Number</label>
+                                    <input type="number" class="form-control" id="phone-number" placeholder="Your Phone Number...">
+                                </div>
+                                <div class="form-group date-group">
+                                    <label for="appointment-date" class="col-form-label"><span class="sr-only sr-only-focusable">Appointment Date</span><i class="far fa-calendar-alt date-icon"></i></label>
+                                    <input type="date" class="form-control date-input" id="appointment-date" placeholder="Appointment Date...">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message-text" class="col-form-label sr-only sr-only-focusable">Message:</label>
+                                    <textarea class="form-control" id="message-text" placeholder="Your Message..."></textarea>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary-1"><span>BOOK NOW</span><div class="btn-overlay"></div></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-modal-backdrop"></div>
+        </div>
+        <div class="page-overlay"></div>
+    </div>
+    
+    <nav class="wide-nav">
+        <div class="container-lg">
+            <div class="row first-row">
+                <p class="schedule"><i class="far fa-clock"></i> <span>Schedule :</span> Monday - Saturday - 8:00 - 18:00, Sunday -  8:00 - 14:00</p>
+                <div class="nav-contact">    
+                    <a href="mailto:agentavery@sample.com?" subject="HTML link"><i class="fas fa-envelope-open-text"></i> info@mediacl.com</a>
+                    <span itemprop="telephone"><a href="tel:#"><i class="fas fa-phone-square-alt"></i> 000-000-0000</a></span>
+                </div>
+                <span class="wide-line col-12"></span>
+            </div>
+            <div class="row">
+                <div class="large-screen-nav">
+                    <a href="#" class="brand"><img src="../images/logo.png" alt="log">MEDICAL</a>
+                    <div class="right-nav">
+                        <ul>
+                            <li><a href="../index.html">HOME</a></li>
+                            <li><a href="#">SERVICES</a></li>
+                            <li><a href="#">DOCTORS</a></li>
+                            <li><a href="#">ABOUT</a></li>
+                            <li><a href="#">CONTACT</a></li>
+                            <li class="blog"><a href="#">BLOG</a></li>
+                        </ul>
+                        <button type="button" class="btn btn-primary-1 appointment-button" data-toggle="modal" data-target="#exampleModal2" data-whatever="@getbootstrap"><span>BOOK APPOINTMENT</span><div class="btn-overlay"></div></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!----------------------- modal of appointment ----------------------------->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">BOOk APPOINTMENT</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="patient-name-1" class="col-form-label sr-only sr-only-focusable">Your Full Name</label>
+                            <input type="text" class="form-control" id="patient-name-1" placeholder="Your Full Name...">
+                        </div>
+                        <div class="form-group">
+                            <label for="email-address-1" class="col-form-label sr-only sr-only-focusable">Your Email Address</label>
+                            <input type="email" class="form-control" id="email-address-1" placeholder="Your Email Address...">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone-number-1" class="col-form-label sr-only sr-only-focusable">Your Phone Number</label>
+                            <input type="number" class="form-control" id="phone-number-1" placeholder="Your Phone Number...">
+                        </div>
+                        <div class="form-group date-group">
+                            <label for="appointment-date-1" class="col-form-label"><span class="sr-only sr-only-focusable">Appointment Date</span><i class="far fa-calendar-alt date-icon"></i></label>
+                            <input type="date" class="form-control date-input" id="appointment-date-1" placeholder="Appointment Date...">
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text-1" class="col-form-label sr-only sr-only-focusable">Message:</label>
+                            <textarea class="form-control" id="message-text-1" placeholder="Your Message..."></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary-1"><span>BOOK NOW</span><div class="btn-overlay"></div></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div id="online-free-booking">
+        <div class="container-lg">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-9">
+                    <h2>ONLINE HASSLE FREE Appointment BOOKING</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia, ipsum eu vulputate pulvinar,
+                    </p>
+                </div>
+                <div class="col-lg-3">
+                    <button type="button" class="btn btn-primary-1 appointment-button" data-toggle="modal" data-target="#exampleModal2" data-whatever="@getbootstrap"><span>BOOK APPOINTMENT</span><div class="btn-overlay"></div></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-md-4 order-md-2">
+                    <h2>SIGNUP NEWSLETTER</h2>
+                    <form>
+                        <label for="footer-form-name" class="sr-only sr-only-focusable">Name</label>
+                        <input type="text" name="footer-form" id="footer-form-name" placeholder="Your Name" required>
+
+                        <label for="footer-form-email" class="sr-only sr-only-focusable">Email</label>
+                        <input type="email" name="footer-form" id="footer-form-email" placeholder="Your Email" required>
+
+                        <button type="submit" class="btn btn-primary-1 appointment-button"><span>SUBMIT</span></button>
+                    
+                    </form>
+                </div>
+
+                <div class="col-md-8">
+                    <div class="row">
+                        <a href="#" class="brand d-none d-md-block"><img src="../images/logo.png" alt="log">MEDICAL</a>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 col-md-2">
+                            <h3>HOME LINKS</h3>
+                            <ul>
+                                <li><a href="#">HOME</a></li>
+                                <li><a href="#">SERVICES</a></li>
+                                <li><a href="#">DOCTORS</a></li>
+                                <li><a href="#">ABOUT</a></li>
+                                <li><a href="#">BLOG</a></li>
+                                <li><a href="#">CONTACT</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-2 pages">
+                            <h3>PAGES</h3>
+                            <ul>
+                                <li><a href="#">BLOG</a></li>
+                                <li><a href="#">DOCTORS</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-lg-4 other-links">
+                            <ul>
+                                <li><a href="#">TERMS & CONDITIONS</a></li>
+                                <li><a href="#">PRIVACY POLICY</a></li>
+                                <li><a href="#">LEGAL DISCLAIMER</a></li>
+                                <li><a href="#">SITEMAP</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 other-links">
+                            <ul>
+                                <li>
+                                    <address>
+                                        <a href="#"><i class="fas fa-map-marked-alt"></i> Area  51 , Some near unknown, USA 000000</a>
+                                    </address>
+                                </li>
+                                <li>
+                                    <a href="mailto:agentavery@sample.com?" subject="HTML link"><i class="fas fa-envelope-open-text"></i> info@mediacl.com</a>
+                                </li>
+                                <li>
+                                    <span itemprop="telephone"><a href="tel:#"><i class="fas fa-phone-square-alt"></i> 000-000-0000</a></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="footer-social-media col-md-8">
+                    <a href="#"><span class="sr-only sr-only-focusable">twitter</span><i class="fab fa-twitter"></i></a>
+                    <a href="#"><span class="sr-only sr-only-focusable">facebook</span><i class="fab fa-facebook-square"></i></a>
+                    <a href="#"><span class="sr-only sr-only-focusable">linkedin</span><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><span class="sr-only sr-only-focusable">pinterest</span><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><span class="sr-only sr-only-focusable">instagram</span><i class="fab fa-instagram"></i></a>
+                    <a href="#"><span class="sr-only sr-only-focusable">youtube</span><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="copy-right col-md-4">
+                    &copy; Mohamed Hany 2020.
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--scripts-->
+    <script src="../scripts/jquery-3.4.1.min.js"></script>
+    <script src="../scripts/bootstrap.min.js"></script>
+    <!--swiper-->
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <!--main script-->
+    <script src="../scripts/blog.js"></script>
+</body>
+</html>
