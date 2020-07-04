@@ -182,6 +182,7 @@ image{
 .btn-overlay{
     background: #0186D5;
     position: absolute;
+    display: flex;
     top: 0;
     left: 0;
     height: 100%;
@@ -193,7 +194,7 @@ image{
     background: #404D5F;
 }
 
-.btn-primary-1 span{
+.btn-primary-1 .data-of-button{
     z-index: 2;
     position: relative;
 }
